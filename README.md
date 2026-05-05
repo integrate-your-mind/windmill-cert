@@ -21,3 +21,18 @@ See [PROOF_STATUS.md](PROOF_STATUS.md) for the precise boundary between what is 
 The Aristotle/Harmonic outputs are reviewed in [ARISTOTLE_REVIEW.md](ARISTOTLE_REVIEW.md). Both runs are useful as scaffolding, but neither is a finished universal proof because the central geometric lemmas remain as `sorry`.
 
 The planned universal proof architecture is mapped in [UNIVERSAL_PROOF_PLAN.md](UNIVERSAL_PROOF_PLAN.md).
+
+## Run the visual
+
+```sh
+npm ci
+npm run dev -- --hostname 127.0.0.1 --port 3000
+```
+
+Then open `http://127.0.0.1:3000/`.
+
+The dev script intentionally uses Next's webpack dev server. In this workspace, the default Next 16 Turbopack dev server returned a root `404` even though the production build exported `/` correctly.
+
+## Current formal proof status
+
+The Real/Mathlib layer is under `Windmill/Real/`. It includes trusted primitives, configuration, side-count, state/balance, projection, median, arc, and step scaffolding modules. The currently proved Real theorem is `Windmill.Real.balanced_start_exists`; the full universal windmill theorem is still work in progress.
