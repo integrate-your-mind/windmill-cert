@@ -1,0 +1,21 @@
+{
+  "name": "windmill-cert",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "node scripts/copy-next-export.mjs",
+    "lint": "eslint .",
+    "test:web": "node --test tests/web/*.test.mjs"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.38.0",
+    "eslint-config-next": "^16.0.0"
+  }
+}

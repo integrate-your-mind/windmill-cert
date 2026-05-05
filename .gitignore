@@ -1,0 +1,23 @@
+.DS_Store
+
+# JavaScript dependencies and builds
+node_modules/
+.next/
+out/
+
+# Lean build/dependency cache
+.lake/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local environment and secrets
+.env
+.env.*
+
+# Generated QA/debug output
+artifacts/next-demo/
+artifacts/aristotle-upload-*/
+artifacts/debug-shot*.png
+

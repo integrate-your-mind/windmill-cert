@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "tested": 12332,
+  "max_n": 8,
+  "exhaustive_grid_size": [
+    4,
+    4
+  ],
+  "exhaustive_up_to_n": 5,
+  "random_cases_per_family": 250,
+  "seed": 20260422
+}
