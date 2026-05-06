@@ -194,7 +194,7 @@ Definitions:
 - `nextPivot`
 - `step : WState n -> WState n`
 
-Status: `Windmill/Real/Arc.lean` and `Windmill/Real/Step.lean` now contain the open-arc and next-pivot witness scaffolding. Existence and uniqueness are not yet proved.
+Status: `Windmill/Real/Arc.lean` and `Windmill/Real/Step.lean` now contain the open-arc and next-pivot witness scaffolding. `Windmill/Real/Angular.lean` adds the Mathlib `Real.Angle` order key and proves that an angle-minimal candidate exists for every represented state with `3 ≤ n`, with uniqueness available from an explicit angle-parameter injectivity hypothesis. Existence/uniqueness of the actual geometric `IsNextPivot` remains to be proved by bridging this angle minimum to the determinant/open-arc predicate.
 
 Core lemmas:
 

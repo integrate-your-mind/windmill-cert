@@ -23,6 +23,7 @@ What is currently proved:
 - `Windmill/Real/Projection.lean` proves existence of a separating real direction for any finite distinct point configuration.
 - `Windmill/Real/Median.lean` proves `balanced_start_exists` for every nonempty real general-position configuration using projection plus a finite median argument.
 - `Windmill/Real/Arc.lean` and `Windmill/Real/Step.lean` add reviewed transition scaffolding definitions without claiming transition existence, uniqueness, or invariant preservation yet.
+- `Windmill/Real/Angular.lean` adds a Mathlib `Real.Angle`-based angular order key and proves that for every represented state with `3 ≤ n`, an angle-minimal candidate next pivot exists. It also proves uniqueness from an explicit injectivity/separation hypothesis. The remaining hard work is proving that general position supplies that injectivity and that the angle-minimal candidate is exactly the geometric windmill successor.
 
 Important scope note:
 
@@ -33,6 +34,7 @@ What is **not** currently proved:
 
 - The universal theorem for every `n`
 - The full invariant argument inside Lean
+- The bridge from the angle-minimal successor in `Windmill.Real.Angular` to the determinant/open-arc successor in `Windmill.Real.Step`
 - The statement that every point is hit infinitely often for all valid configurations
 
 ## Why this matters

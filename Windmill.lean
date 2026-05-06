@@ -15,4 +15,5 @@ import Windmill.Real.Balance
 import Windmill.Real.Projection
 import Windmill.Real.Median
 import Windmill.Real.Arc
+import Windmill.Real.Angular
 import Windmill.Real.Step

@@ -44,6 +44,8 @@ import Windmill
 #print axioms Windmill.Real.GeneralPosition.orient_ne_zero
 #print axioms Windmill.Real.Line.leftCount_reverse
 #print axioms Windmill.Real.balanced_start_exists
+#print axioms Windmill.Real.angle_nextPivot_exists
+#print axioms Windmill.Real.angle_nextPivot_unique_of_param_injective
 LEAN
 AXIOM_OUTPUT="$("$LAKE" env lean "$AXIOM_CHECK")"
 printf '%s\n' "$AXIOM_OUTPUT"
