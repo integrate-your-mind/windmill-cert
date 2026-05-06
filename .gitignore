@@ -17,7 +17,7 @@ __pycache__/
 .env.*
 
 # Generated QA/debug output
+.playwright-mcp/
 artifacts/next-demo/
 artifacts/aristotle-upload-*/
 artifacts/debug-shot*.png
-

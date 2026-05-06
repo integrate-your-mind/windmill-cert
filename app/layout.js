@@ -18,6 +18,9 @@ export const metadata = {
   title: "Windmill Certificate Demo",
   description:
     "Interactive React and Next.js visualization of a certified windmill cycle.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
